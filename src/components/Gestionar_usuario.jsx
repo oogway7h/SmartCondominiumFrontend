@@ -6,7 +6,6 @@ function GestionUsuarios() {
   const [usuarios, setUsuarios] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-
   const handleEliminar = async(id)=>{
     try{
         const API_URL="https://smartcondominiumbackend-production.up.railway.app"
@@ -23,7 +22,8 @@ function GestionUsuarios() {
   useEffect(() => {
     const fetchUsuarios = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/personas/gestionar_usuario/", {
+        const API_URL="https://smartcondominiumbackend-production.up.railway.app"
+        const response = await axios.get(`${API_URL}/personas/gestionar_usuario/`, {
           withCredentials: true,
         });
         setUsuarios(response.data.usuarios);
