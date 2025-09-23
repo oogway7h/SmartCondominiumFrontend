@@ -7,7 +7,7 @@ function Profile() {
 
   const getUserData = async () => {
     try {
-      const API_URL="http://smartcondominiumbackend-production.up.railway.app"
+      const API_URL="https://smartcondominiumbackend-production.up.railway.app"
       const response = await axios.get(`${API_URL}/personas/obtener_datos/`, {
         withCredentials:true
       });

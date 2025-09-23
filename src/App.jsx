@@ -21,7 +21,8 @@ function App() {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const res = await axios.get("http://127.0.0.1:8000/personas/obtener_datos/", {
+        const API_URL="https://smartcondominiumbackend-production.up.railway.app"
+        const res = await axios.get(`${API_URL}/personas/obtener_datos/`, {
           withCredentials: true, 
         });
         setIsLoggedIn(true);
