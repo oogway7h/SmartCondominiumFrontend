@@ -15,8 +15,9 @@ function PropiedadForm({ onSuccess }) {
     setError(null);
 
     try {
+      const API_URL="https://smartcondominiumbackend-production.up.railway.app"
       const response = await axios.post(
-        `http://127.0.0.1:8000/personas/registrar_propiedad/${personaId}/`,
+        `${API_URL}/personas/registrar_propiedad/${personaId}/`,
         {
             ubicacion:ubicacion,
             pertenece_a:perteneceA

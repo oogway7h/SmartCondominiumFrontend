@@ -15,7 +15,8 @@ function RegistroForm() {
   const handleSubmit = async (e) => {
     e.preventDefault(); 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/personas/registro/",{
+      const API_URL="https://smartcondominiumbackend-production.up.railway.app"
+      const res = await axios.post(`${API_URL}/personas/registro/`,{
         correo: correo,
         nombre: nombre,
         telefono: telefono,

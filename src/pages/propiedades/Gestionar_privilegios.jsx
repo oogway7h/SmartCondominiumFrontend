@@ -14,10 +14,12 @@ function GestionPrivilegios() {
   const [mostrar, setMostrar] = useState(false);
 
   const handleCambio = async (id, campo, valorActual) => {
-  try {
+  const API_URL="https://smartcondominiumbackend-production.up.railway.app"
+    try {
 
     await axios.patch(
-      `http://127.0.0.1:8000/personas/actualizar_privilegios/${id}/`,
+      
+      `${API_URL}/personas/actualizar_privilegios/${id}/`,
       { [campo]: !valorActual },
       { withCredentials: true }
     );

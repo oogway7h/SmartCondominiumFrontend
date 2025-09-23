@@ -9,7 +9,8 @@ function GestionUsuarios() {
 
   const handleEliminar = async(id)=>{
     try{
-        await axios.delete(`http://127.0.0.1:8000/personas/eliminar_usuario/${id}/` ,{
+        const API_URL="https://smartcondominiumbackend-production.up.railway.app"
+        await axios.delete(`${API_URL}/eliminar_usuario/${id}/` ,{
             withCredentials:true,
         });
         setUsuarios(usuarios.filter((user) => user.id !== id));

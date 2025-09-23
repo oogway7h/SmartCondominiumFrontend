@@ -12,7 +12,8 @@ function AgregarInfraccion() {
   const handleSubmit = async (e,id) => {
     e.preventDefault(); 
     try {
-      const res = await axios.post(`http://127.0.0.1:8000/personas/agregar_infraccion/17/`,{
+      const API_URL="https://smartcondominiumbackend-production.up.railway.app"
+      const res = await axios.post(`${API_URL}/personas/agregar_infraccion/17/`,{
         monto:monto,
         descripcion:descripcion,
         fecha:fecha,
