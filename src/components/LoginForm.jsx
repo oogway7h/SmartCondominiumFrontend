@@ -14,8 +14,9 @@ function LoginForm({ setIsLoggedIn }) {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
+    const API_URL="http://smartcondominiumbackend-production.up.railway.app"
     const res = await axios.post(
-      "http://127.0.0.1:8000/personas/login/",
+      `${API_URL}/personas/login/`,
       {
         correo: username,
         passwor: password,

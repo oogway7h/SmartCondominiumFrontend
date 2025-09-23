@@ -8,9 +8,10 @@ function Bitacora() {
   const [error, setError] = useState("");
 
   useEffect(() => {
+    const API_URL="smartcondominiumbackend-production.up.railway.app"
     const fetchBitacora = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/personas/bitacora/", {
+        const response = await axios.get(`${API_URL}/personas/bitacora/`, {
           withCredentials: true
         });
         setRegistros(response.data.bitacora);
