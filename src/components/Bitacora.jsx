@@ -8,7 +8,7 @@ function Bitacora() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const API_URL="smartcondominiumbackend-production.up.railway.app"
+    const API_URL="https://smartcondominiumbackend-production.up.railway.app"
     const fetchBitacora = async () => {
       try {
         const response = await axios.get(`${API_URL}/personas/bitacora/`, {
