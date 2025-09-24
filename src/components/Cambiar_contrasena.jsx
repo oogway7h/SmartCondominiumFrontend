@@ -11,7 +11,7 @@ function Cambiar_contrasena(){
          e.preventDefault();
         try{
             const API_URL="https://smartcondominiumbackend-production.up.railway.app"
-            const res = await axios.post(`${API_URL}/personas/nueva_contraseña/`,{
+            const res = await axios.post(`${API_URL}/personas/cambiar_contraseña/`,{
             //const res = await axios.post("http://127.0.0.1:8000/personas/cambiar_contrasena/",{
             passwor:password
             },{
