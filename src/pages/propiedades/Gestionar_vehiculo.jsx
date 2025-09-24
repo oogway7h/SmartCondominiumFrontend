@@ -45,7 +45,7 @@ function Gestionar_vehiculo() {
     });
   };
 
-  // Enviar formulario
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const API_URL="https://smartcondominiumbackend-production.up.railway.app"
@@ -68,7 +68,7 @@ function Gestionar_vehiculo() {
   };
 
   return (
-    <div className="form-container">
+    <div className="formcontainer">
       <h2>Gestionar Vehículo</h2>
       {mensaje && <p className="message">{mensaje}</p>}
       {loading && <p className="message">Cargando usuarios...</p>}
@@ -138,7 +138,7 @@ function Gestionar_vehiculo() {
           />
         </div>
 
-        <button type="submit" className="btn-submit">
+        <button type="submit" className="btnsubmit">
           Guardar
         </button>
       </form>

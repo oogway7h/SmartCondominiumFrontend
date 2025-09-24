@@ -55,13 +55,17 @@ function GestionUsuarios() {
         <tbody>
           {usuarios.map((user) => (
             <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.nombre}</td>
-              <td>{user.correo}</td>
-              <td>{user.rol}</td>
-              <td><button id="elim" onClick={()=> handleEliminar(user.id)}>eliminar</button></td>
-              <td><button id="edit" >editar</button></td>
-            </tr>
+              <td data-label="ID">{user.id}</td>
+              <td data-label="Nombre">{user.nombre}</td>
+              <td data-label="Correo">{user.correo}</td>
+              <td data-label="Rol">{user.rol}</td>
+              <td data-label="Acción">
+                <button id="elim" onClick={() => handleEliminar(user.id)}>eliminar</button>
+              </td>
+              <td data-label="Acción">
+                <button id="edit">editar</button>
+              </td>
+          </tr>
           ))}
         </tbody>
       </table>
