@@ -35,7 +35,7 @@ const Sidebar = () => {
             <ul className="submenu">
               <li><Link to="/Bitacora">Bitacora</Link></li>
               <li><Link to="">Reportes</Link></li>
-              <li><Link to="">Avisos</Link></li>
+              <li><Link to="/Gestionar_aviso">Avisos</Link></li>
             </ul>
           )}
         </li>
@@ -65,6 +65,7 @@ const Sidebar = () => {
               <li><Link to="/Registrar_propiedad">Registrar</Link></li>
               <li><Link to="/Gestionar_privilegios"> Gestionar Privilegios</Link></li>
               <li><Link to="/Gestionar_infraccion">Gestionar infraccion</Link></li>
+              <li><Link to="/Gestionar_vehiculo">Gestionar Vehiculo</Link></li>
             </ul>
           )}
         </li>
