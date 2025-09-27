@@ -80,6 +80,7 @@ const Sidebar = () => {
           {openMenu === "Finanzas" && (
             <ul className="submenu">
               <li><Link to="/buscar_persona">Buscar</Link></li>
+              <li><Link to="/Verificar_pagos">Verificar Pago</Link></li>
             </ul>
           )}
         </li>

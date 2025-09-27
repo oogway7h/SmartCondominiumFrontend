@@ -33,7 +33,7 @@ function LoginForm({ setIsLoggedIn }) {
   try {
     const API_URL="https://smartcondominiumbackend-production.up.railway.app"
     const res = await axios.post(`${API_URL}/personas/login/`,{
-      //const res = await axios.post("http://127.0.0.1:8000/personas/login/",{
+    //const res = await axios.post("http://127.0.0.1:8000/personas/login/",{
         correo: username,
         passwor: password,
       },

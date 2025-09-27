@@ -18,6 +18,7 @@ import Cambiar_contrasena from "./components/Cambiar_contrasena";
 import Gestionar_vehiculo from "./pages/propiedades/Gestionar_vehiculo";
 import Gestionar_aviso from "./pages/avisos/Gestionar_aviso";
 import Mostrar_avisos from "./pages/avisos/Mostrar_avisos";
+import Verificar_pagos from "./pages/finanzas/Verificar_pagos"
 
 
 function App() {
@@ -157,6 +158,14 @@ function App() {
           //<PrivateRoute isLoggedIn={isLoggedIn}>
             <MainLayout>
               <Mostrar_avisos/>
+            </MainLayout>
+          //</PrivateRoute>
+        } />
+
+        <Route path="/Verificar_pagos" element={
+          //<PrivateRoute isLoggedIn={isLoggedIn}>
+            <MainLayout>
+              <Verificar_pagos/>
             </MainLayout>
           //</PrivateRoute>
         } />
