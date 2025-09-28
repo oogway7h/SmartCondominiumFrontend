@@ -21,7 +21,7 @@ const Sidebar = () => {
           {openMenu === "home" && (
             <ul className="submenu">
               <li><Link to="/Homen">Dashboard</Link></li>
-              <li><Link to="/Analytics">Analytics</Link></li>
+              <li><Link to="/CamaraReconocimiento">Camara entrada</Link></li>
             </ul>
           )}
         </li>

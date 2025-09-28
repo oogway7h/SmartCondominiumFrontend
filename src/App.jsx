@@ -19,6 +19,7 @@ import Gestionar_vehiculo from "./pages/propiedades/Gestionar_vehiculo";
 import Gestionar_aviso from "./pages/avisos/Gestionar_aviso";
 import Mostrar_avisos from "./pages/avisos/Mostrar_avisos";
 import Verificar_pagos from "./pages/finanzas/Verificar_pagos"
+import CamaraReconocimiento from "./pages/reconocimiento/CamaraReconocimiento";
 
 
 function App() {
@@ -169,7 +170,15 @@ function App() {
             </MainLayout>
           //</PrivateRoute>
         } />
-
+        
+        
+        <Route path="/CamaraReconocimiento" element={
+          //<PrivateRoute isLoggedIn={isLoggedIn}>
+            <MainLayout>
+              <CamaraReconocimiento/>
+            </MainLayout>
+          //</PrivateRoute>
+        } />
       </Routes>
     </Router>
   );
