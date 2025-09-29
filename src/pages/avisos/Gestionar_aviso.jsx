@@ -27,7 +27,7 @@ function Gestionar_aviso() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const API_URL="https://smartcondominiumbackend-production.up.railway.app"
-    axios.get(`${API_URL}/personas/crear_aviso/`,form, {
+    axios.post(`${API_URL}/personas/crear_aviso/`,form, {
     //axios.post("http://127.0.0.1:8000/personas/crear_aviso/", form, {
         withCredentials: true,
       })
