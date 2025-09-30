@@ -49,7 +49,7 @@ function Gestionar_vehiculo() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const API_URL="https://smartcondominiumbackend-production.up.railway.app"
-    axios.post(`${API_URL}/vehiculos/gestionar_vehiculo/`,form)
+    axios.post(`${API_URL}/personas/gestionar_vehiculo/`,form)
     //axios.post("http://127.0.0.1:8000/vehiculos/gestionar_vehiculo/", form)
       .then((res) => {
         setMensaje(res.data.message);
