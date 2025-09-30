@@ -1,0 +1,59 @@
+/* Homen.css */
+.homen-container {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2e4f42, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #374151;
+}
+
+.homen-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2563eb; /* azul */
+  margin-bottom: 20px;
+}
+
+.homen-subtitle {
+  font-size: 1.2rem;
+  color: #374151; /* gris oscuro */
+  margin-bottom: 10px;
+}
+
+.homen-highlight {
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.homen-highlight.green {
+  color: #16a34a;
+}
+.homen-highlight.blue {
+  color: #2563eb;
+}
+.homen-highlight.purple {
+  color: #9333ea;
+}
+
+.homen-button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.homen-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
