@@ -20,7 +20,7 @@ const Sidebar = () => {
           </button>
           {openMenu === "home" && (
             <ul className="submenu">
-              <li><Link to="/Homen">Dashboard</Link></li>
+              {/*<li><Link to="/Homen">Dashboard</Link></li>*/}
               <li><Link to="/CamaraReconocimiento">Camara entrada</Link></li>
             </ul>
           )}
