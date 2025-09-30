@@ -13,8 +13,8 @@ function Avisos() {
     
     const fetchAvisos = async () => {
       try {
-        //const response = await axios.get(`${API_URL}/personas/mostrar_avisos/`, {
-        const response = await axios.get(`http://127.0.0.1:8000/personas/mostrar_avisos/`, {     
+        const response = await axios.get(`${API_URL}/personas/mostrar_avisos/`, {
+        //const response = await axios.get(`http://127.0.0.1:8000/personas/mostrar_avisos/`, {     
             withCredentials: true });
         setAvisos(response.data.avisos || []);
       } catch (err) {
@@ -75,7 +75,7 @@ function Avisos() {
                 <td>
                   <button className="eliminar" onClick={() => eliminarAviso(a.id) }>Eliminar</button>
                   <br />
-                  <button className="editar">Editar</button>
+              
                 </td>
               </tr>
             ))

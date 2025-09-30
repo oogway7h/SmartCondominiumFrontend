@@ -62,9 +62,6 @@ function GestionUsuarios() {
               <td data-label="Acción">
                 <button id="elim" onClick={() => handleEliminar(user.id)}>eliminar</button>
               </td>
-              <td data-label="Acción">
-                <button id="edit">editar</button>
-              </td>
           </tr>
           ))}
         </tbody>

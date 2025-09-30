@@ -34,7 +34,6 @@ const Sidebar = () => {
           {openMenu === "profile" && (
             <ul className="submenu">
               <li><Link to="/Bitacora">Bitacora</Link></li>
-              <li><Link to="">Reportes</Link></li>
               <li><Link to="/Gestionar_aviso">Avisos</Link></li>
             </ul>
           )}
@@ -79,7 +78,6 @@ const Sidebar = () => {
           </button>
           {openMenu === "Finanzas" && (
             <ul className="submenu">
-              <li><Link to="/buscar_persona">Buscar</Link></li>
               <li><Link to="/Verificar_pagos">Verificar Pago</Link></li>
             </ul>
           )}
